@@ -1,0 +1,131 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #ffe6f0, #e6f7ff);
+    margin: 0;
+    padding: 0;
+    background-image: url('img/fondo.jpg');
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff9f9;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ff3399;
+}
+
+.mensaje {
+    background: #fff0f5;
+    border-left: 5px solid #ff66cc;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    text-align: center;
+}
+
+.regalos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: #fff8fc;
+    border: 2px solid #ffccf9;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3);
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 105, 180, 0.3);
+}
+
+.tarjeta h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff69b4;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+button {
+    background-color: #ff66b2;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #ff3399;
+}
+
+.reservado {
+    opacity: 0.6;
+    position: relative;
+}
+
+.etiqueta {
+    background: #ff6666;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.separador {
+    margin-top: 40px;
+    color: #3399ff;
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* una sola tarjeta por fila */
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .tarjeta {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .mensaje {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+.imagen-mensaje {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto 30px auto;
+}
